@@ -10,3 +10,4 @@ plot(inp[,2],
      ylab = "Volumen del caudal(mm/día)")
 lines(inp[,3],
       col="grey")
+[](Volumen diario de los caudales.png)
