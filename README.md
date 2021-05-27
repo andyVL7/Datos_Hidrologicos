@@ -21,7 +21,7 @@ hist(inp[,2], col = "Lightblue",
      main = "Histograma del Río Estrella", 
      xlab = "Cantidad por día(mm)",
      ylab = "Frecuencia")
-![](https://github.com/andyVL7/Datos_Hidrologicos/blob/main/Rplot.png)
+![](Rplot.png)
 
 #### Histograma para Río babano
 hist(inp[,2], col = "yellow", 
