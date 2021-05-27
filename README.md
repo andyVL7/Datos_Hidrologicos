@@ -36,7 +36,7 @@ attach(inp)
 
 #### Para probar si funcionó lo anterior usamos un plot
 plot(estrella, col="black")
-![]()
+![](Rplot03.png)
 
 ## Definir la fechas en días, meses y años
 Tempdate <- strptime(inp[,1], format= "%d/%m/%Y")
