@@ -76,11 +76,17 @@ write.csv(rbind(MMQ_estrella,MMQ_banano), file="MMQ.csv")
 corinp <- cor(inp[,2:3],method= "spearman")
 plot(estrella, banano)
 
-![]()
+![](Rplot04.png)
 
 inp.lm <- lm(inp[,2] ~ inp[,3], data=inp)
 summary(inp.lm)
 
 ## graficos de correlacion
 plot(inp.lm)
+
+![]()
+
+![]()
+
+![]()
 
