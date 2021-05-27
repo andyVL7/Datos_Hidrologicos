@@ -11,7 +11,7 @@ plot(inp[,2],
 lines(inp[,3],
       col="grey")
       
-![](https://github.com/andyVL7/Datos_Hidrologicos/blob/main/Volumen%20diario%20de%20los%20caudales.png)
+![](Volumen diario de los caudales.png)
 
 ### Estadistica de los caudales de estos dos ríos
 summary(inp[,2:3])
