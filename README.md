@@ -28,7 +28,7 @@ hist(inp[,2], col = "yellow",
      main = "Histograma del Río Banano", 
      xlab = "Cantidad por día(mm)",
      ylab = "Frecuencia")
-![]()
+![](Rplot01.png)
 
 ## Asociamos nombre a los ríos
 names(inp) <- c("fecha","estrella","banano")
