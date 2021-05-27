@@ -36,6 +36,7 @@ attach(inp)
 
 #### Para probar si funcionó lo anterior usamos un plot
 plot(estrella, col="black")
+![]()
 
 ## Definir la fechas en días, meses y años
 Tempdate <- strptime(inp[,1], format= "%d/%m/%Y")
@@ -57,6 +58,7 @@ lines(MAQ_estrella, col=1)
 legend(x="topright",
        inset = 0.05, legend = c("Estrella","Banano"),
        fill = c("Black","blue"), horiz = FALSE)
+![](Rplot02.png)
 
 ## añadir los datos de volumen mensual de los ríos a una carpeta
 MMQ_estrella <- tapply(estrella, format(Tempdate, format="%m"), FUN=sum)
