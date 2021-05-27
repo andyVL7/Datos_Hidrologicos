@@ -51,7 +51,7 @@ MAQ_banano <- tapply(banano, format(Tempdate, format="%Y"), FUN=sum)
 ### Exportamos los datos anuales
 write.csv(rbind(MAQ_estrella,MAQ_banano), file="MAQ.csv")
 
-##### Gráfico con los datos del volumen anual de los ríos
+### Gráfico con los datos del volumen anual de los ríos
 plot(MAQ_banano,
      ylim=c(475,3000), col="blue",
      main = "Volumen anual de los Ríos Banano y Estrella",
