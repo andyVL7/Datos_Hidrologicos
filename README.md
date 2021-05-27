@@ -3,7 +3,7 @@
 
 # Procesamiento de Datos.  Andy Johel Valverde Ledezma  
 
-## **Gráfico de caudales**
+## Gráfico de caudales
 plot(inp[,2],
      main = "Volumen diario del cauldal de los Ríos Banano y Estrella",
      type = "l", col="black", xlab = "Fecha",
@@ -36,7 +36,7 @@ hist(inp[,2], col = "yellow",
 names(inp) <- c("fecha","estrella","banano")
 attach(inp)
 
-#### Para probar si funcionó lo anterior usamos un plot
+### Para probar si funcionó lo anterior usamos un plot
 plot(estrella, col="black")
 
 ![](Rplot03.png)
@@ -64,15 +64,15 @@ legend(x="topright",
        
 ![](Rplot02.png)
 
-## añadir los datos de volumen mensual de los ríos a una carpeta
+## Añadir los datos de volumen mensual de los ríos a una carpeta
 MMQ_estrella <- tapply(estrella, format(Tempdate, format="%m"), FUN=sum)
 MMQ_banano <- tapply(banano, format(Tempdate, format="%m"), FUN=sum)
 
-### exportamos los datos mensuales
+### Exportamos los datos mensuales
 write.csv(rbind(MMQ_estrella,MMQ_banano), file="MMQ.csv")
 
-## Analisis de correlacion
-### Utilizaremos la función cor para obtener datos que muestran correlación
+## Análisis de correlación
+### Utilizaremos la función "cor" para obtener datos que muestran correlación
 corinp <- cor(inp[,2:3],method= "spearman")
 plot(estrella, banano)
 
@@ -81,7 +81,7 @@ plot(estrella, banano)
 inp.lm <- lm(inp[,2] ~ inp[,3], data=inp)
 summary(inp.lm)
 
-## graficos de correlacion
+## Gráficos de correlación
 plot(inp.lm)
 
 ![](Rplot05.png)
