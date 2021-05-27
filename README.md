@@ -1,7 +1,8 @@
-# **Tarea sobre datos hidrología**
+# **Tarea 2. Exploración de Datos. Tarea sobre datos hidrológicos.**
+
+
 # Procesamiento de Datos  
-# Tarea 2. Exploración de Datos  
-# Andy Johel Valverde Ledezma  
+Andy Johel Valverde Ledezma  
 
 ## **Gráfico de caudales.**
 plot(inp[,2],
