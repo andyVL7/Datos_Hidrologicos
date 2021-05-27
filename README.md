@@ -10,4 +10,4 @@ plot(inp[,2],
      ylab = "Volumen del caudal(mm/día)")
 lines(inp[,3],
       col="grey")
-![https://github.com/andyVL7/Datos_Hidrologicos/blob/main/Volumen%20diario%20de%20los%20caudales.png]()
+![](Volumen diario de los caudales.png)
