@@ -21,6 +21,7 @@ hist(inp[,2], col = "Lightblue",
      main = "Histograma del Río Estrella", 
      xlab = "Cantidad por día(mm)",
      ylab = "Frecuencia")
+     
 ![](Rplot.png)
 
 ### Histograma para Río babano
@@ -28,6 +29,7 @@ hist(inp[,2], col = "yellow",
      main = "Histograma del Río Banano", 
      xlab = "Cantidad por día(mm)",
      ylab = "Frecuencia")
+     
 ![](Rplot01.png)
 
 ## Asociamos nombre a los ríos
@@ -36,6 +38,7 @@ attach(inp)
 
 #### Para probar si funcionó lo anterior usamos un plot
 plot(estrella, col="black")
+
 ![](Rplot03.png)
 
 ## Definir la fechas en días, meses y años
@@ -58,6 +61,7 @@ lines(MAQ_estrella, col=1)
 legend(x="topright",
        inset = 0.05, legend = c("Estrella","Banano"),
        fill = c("Black","blue"), horiz = FALSE)
+       
 ![](Rplot02.png)
 
 ## añadir los datos de volumen mensual de los ríos a una carpeta
@@ -71,6 +75,8 @@ write.csv(rbind(MMQ_estrella,MMQ_banano), file="MMQ.csv")
 ### Utilizaremos la función cor para obtener datos que muestran correlación
 corinp <- cor(inp[,2:3],method= "spearman")
 plot(estrella, banano)
+
+![]()
 
 inp.lm <- lm(inp[,2] ~ inp[,3], data=inp)
 summary(inp.lm)
