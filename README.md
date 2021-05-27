@@ -84,9 +84,9 @@ summary(inp.lm)
 ## graficos de correlacion
 plot(inp.lm)
 
-![]()
+![](Rplot05.png)
 
-![]()
+![](Rplot06.png)
 
-![]()
+![](Rplot07.png)
 
