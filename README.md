@@ -3,7 +3,7 @@
 
 # Procesamiento de Datos.  Andy Johel Valverde Ledezma  
 
-## **Gráfico de caudales.**
+## **Gráfico de caudales**
 plot(inp[,2],
      main = "Volumen diario del cauldal de los Ríos Banano y Estrella",
      type = "l", col="black", xlab = "Fecha",
